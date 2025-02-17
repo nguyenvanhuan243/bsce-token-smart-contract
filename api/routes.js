@@ -5,6 +5,7 @@ module.exports = function (app) {
 	const smartContractController = require('./controllers/smartContractController');
 	const coin98Controller = require('./controllers/coin98Controller');
 	const cakeController = require('./controllers/cakeController');
+	const thetaController = require('./controllers/thetaController');
 
 	app.route('/')
 		.get(healthServerController.getHealthServer)
@@ -17,4 +18,7 @@ module.exports = function (app) {
 
 	app.route("/cake")
 		.get(cakeController.tokenInformation)
+
+	app.route("/theta")
+		.get(thetaController.tokenInformation)
 };
