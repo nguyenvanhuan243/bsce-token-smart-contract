@@ -40,5 +40,9 @@ https://bsce-token-smart-contract.onrender.com/cake
 ```
 
 ```
+https://bsce-token-smart-contract.onrender.com/theta
+```
+
+```
 https://bsce-token-smart-contract.onrender.com/api-docs
 ```
