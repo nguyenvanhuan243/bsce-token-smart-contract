@@ -1,2 +1,1 @@
-# smartcontract.bscexchange.com
-smartcontract.bscexchange.com
+# BCSE Token on Binance Smart Chain
