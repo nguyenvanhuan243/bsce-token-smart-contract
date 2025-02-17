@@ -1,18 +1,19 @@
-# BCSE Token on Binance Smart Chain
+"use strict";
+const { ethers } = require("ethers");
+const coin98MainnetABI = require("./../../abi/cake/mainnet.json")
 
-## Get bsce token information by using ethers lib
-```
-tokenInformation: async function (req, res) {
+module.exports = {
+	tokenInformation: async function (req, res) {
 		try {
 			const web3Provider = new ethers.Contract(
-				process.env.BSCE_CONTRACT,
-				bsceMainnetABI,
+				process.env.CAKE_CONTRACT,
+				coin98MainnetABI,
 				new ethers.getDefaultProvider(process.env.BSC_RPC)
 			);
-			const tokenName   = await web3Provider.name();
+			const tokenName = await web3Provider.name();
 			const tokenSymbol = await web3Provider.symbol();
 			const totalSupply = await web3Provider.totalSupply();
-	
+
 			res.json({
 				tokenName: tokenName,
 				tokenSymbol: tokenSymbol,
@@ -24,21 +25,4 @@ tokenInformation: async function (req, res) {
 			res.status(500).json({ error: "Failed to retrieve token data" });
 		}
 	}
-```
-
-API routes
-```
-https://bsce-token-smart-contract.onrender.com/token
-```
-
-```
-https://bsce-token-smart-contract.onrender.com/coin98
-```
-
-```
-https://bsce-token-smart-contract.onrender.com/cake
-```
-
-```
-https://bsce-token-smart-contract.onrender.com/api-docs
-```
+}
