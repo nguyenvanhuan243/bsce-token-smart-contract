@@ -32,5 +32,9 @@ https://bsce-token-smart-contract.onrender.com/token
 ```
 
 ```
+https://bsce-token-smart-contract.onrender.com/coin98
+```
+
+```
 https://bsce-token-smart-contract.onrender.com/api-docs
 ```
