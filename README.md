@@ -25,3 +25,12 @@ tokenInformation: async function (req, res) {
 		}
 	}
 ```
+
+API routes
+```
+https://bsce-token-smart-contract.onrender.com/token
+```
+
+```
+https://bsce-token-smart-contract.onrender.com/api-docs
+```
