@@ -13,7 +13,7 @@ module.exports = {
 			const tokenName   = await web3Provider.name();
 			const tokenSymbol = await web3Provider.symbol();
 			const totalSupply = await web3Provider.totalSupply();
-	
+	 
 			res.json({
 				tokenName: tokenName,
 				tokenSymbol: tokenSymbol,
