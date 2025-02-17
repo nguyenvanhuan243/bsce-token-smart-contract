@@ -1,0 +1,19 @@
+{
+  "name": "smartcontract.bscexchange.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": "https://github.com/BSCE-FINANCE/smartcontract.bscexchange.com.git",
+  "author": "Huan Nguyen <nguyenvanhuan243@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
